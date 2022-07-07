@@ -11,15 +11,16 @@
         <nav>
             <li><a href="#">Home</a></li>
             <li><a href="#">Register</a></li>
+            <li><a href="{% url 'task-create' %}">Add Tasks</a></li>
         </nav>
     </div>
 
 
     <div class="UserTable">
-        <table border="1">
+        <table>
             <tr>
                 <th>Items</th>
-                <th>View</th>
+                <th></th>
             </tr>
             {% for task in tasks %}
                 <tr>
